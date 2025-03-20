@@ -92,80 +92,82 @@
 
 
             <!-- Form Start -->
-            <div class="container-fluid pt-4 px-4">
-                <div class="row g-4">
-                    <!-- Formulaire d'ajout de document -->
-                    <div class="col-sm-12 col-xl-6">
-                        <div class="bg-secondary rounded h-100 p-4">
-                            <h6 class="mb-4">Ajouter un Document</h6>
-                            <form>
-                                <div class="mb-3">
-                                    <label for="docName" class="form-label">Nom du document</label>
-                                    <input type="text" class="form-control" id="docName" placeholder="Nom du document">
-                                </div>
-                                <div class="mb-3">
-                                    <label for="docType" class="form-label">Type de document</label>
-                                    <select class="form-control" id="docType">
-                                        <option>PDF</option>
-                                        <option>Word (DOCX)</option>
-                                        <option>Excel (XLSX)</option>
-                                        <option>PowerPoint (PPTX)</option>
-                                        <option>Image</option>
-                                    </select>
-                                </div>
-                                <div class="mb-3">
-                                    <label for="docFile" class="form-label">Fichier</label>
-                                    <input type="file" class="form-control" id="docFile">
-                                </div>
-                                <button type="submit" class="btn btn-primary"><i class="fa fa-upload"></i> Ajouter</button>
-                            </form>
-                        </div>
+           <!-- Form Start -->
+<div class="container-fluid pt-4 px-4">
+    <div class="row g-4">
+        <!-- Formulaire d'ajout de document -->
+        <div class="col-12">
+            <div class="bg-secondary rounded h-100 p-4">
+                <h6 class="mb-4">Ajouter un Document</h6>
+                <form>
+                    <div class="mb-3">
+                        <label for="docName" class="form-label">Nom du document</label>
+                        <input type="text" class="form-control" id="docName" placeholder="Nom du document">
                     </div>
-            
-                    <!-- Tableau des documents -->
-                    <div class="col-sm-12 col-xl-6">
-                        <div class="bg-secondary rounded h-100 p-4">
-                            <h6 class="mb-4">Liste des Documents</h6>
-                            <table class="table table-striped">
-                                <thead>
-                                    <tr>
-                                        <th scope="col">#</th>
-                                        <th scope="col">Nom</th>
-                                        <th scope="col">Type</th>
-                                        <th scope="col">Date</th>
-                                        <th scope="col">Actions</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <th scope="row">1</th>
-                                        <td>Rapport Annuel</td>
-                                        <td>PDF</td>
-                                        <td>15/03/2025</td>
-                                        <td>
-                                            <button class="btn btn-warning btn-sm"><i class="fa fa-edit"></i></button>
-                                            <button class="btn btn-danger btn-sm"><i class="fa fa-trash"></i></button>
-                                            <button class="btn btn-success btn-sm"><i class="fa fa-download"></i></button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">2</th>
-                                        <td>Budget 2025</td>
-                                        <td>XLSX</td>
-                                        <td>10/03/2025</td>
-                                        <td>
-                                            <button class="btn btn-warning btn-sm"><i class="fa fa-edit"></i></button>
-                                            <button class="btn btn-danger btn-sm"><i class="fa fa-trash"></i></button>
-                                            <button class="btn btn-success btn-sm"><i class="fa fa-download"></i></button>
-                                        </td>
-                                    </tr>
-                                    
-                                </tbody>
-                            </table>
-                        </div>
+                    <div class="mb-3">
+                        <label for="docType" class="form-label">Type de document</label>
+                        <select class="form-control" id="docType">
+                            <option>PDF</option>
+                            <option>Word (DOCX)</option>
+                            <option>Excel (XLSX)</option>
+                            <option>PowerPoint (PPTX)</option>
+                            <option>Image</option>
+                        </select>
                     </div>
-                </div>
+                    <div class="mb-3">
+                        <label for="docFile" class="form-label">Fichier</label>
+                        <input type="file" class="form-control" id="docFile">
+                    </div>
+                    <button type="submit" class="btn btn-primary"><i class="fa fa-upload"></i> Ajouter</button>
+                </form>
             </div>
+        </div>
+
+        <!-- Tableau des documents -->
+        <div class="col-12">
+            <div class="bg-secondary rounded h-100 p-4 mt-4">
+                <h6 class="mb-4">Liste des Documents</h6>
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Nom</th>
+                            <th scope="col">Type</th>
+                            <th scope="col">Date</th>
+                            <th scope="col">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Rapport Annuel</td>
+                            <td>PDF</td>
+                            <td>15/03/2025</td>
+                            <td>
+                                <button class="btn btn-warning btn-sm"><i class="fa fa-edit"></i></button>
+                                <button class="btn btn-danger btn-sm"><i class="fa fa-trash"></i></button>
+                                <button class="btn btn-success btn-sm"><i class="fa fa-download"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Budget 2025</td>
+                            <td>XLSX</td>
+                            <td>10/03/2025</td>
+                            <td>
+                                <button class="btn btn-warning btn-sm"><i class="fa fa-edit"></i></button>
+                                <button class="btn btn-danger btn-sm"><i class="fa fa-trash"></i></button>
+                                <button class="btn btn-success btn-sm"><i class="fa fa-download"></i></button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Form End -->
+
             
             <!-- Form End -->
 
